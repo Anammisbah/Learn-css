@@ -1,0 +1,31 @@
+/* 
+text property terdiri dari : 
+- text-decoration: untuk mendekor font
+=> text-decoration: underline, overline, line-through
+- text-transform: untuk mengubah font menjadi kapital atau huruf kecil
+=> text-transform: capitalize, uppercase, lowercase, none
+- text-align: untuk mengatur posisi text
+=> text-align: left, right, center, justify;
+- text-indent: untuk mengatur indentasi text
+=> text indent: bisa dalam satuan px, em, rem, dll;
+- text-shadow : untuk memberi bayangan disekeliling text
+=> text-shadow : <h-shadow> <v-shadow> <blur-radius> <color>;
+*/
+.paragraph-1{
+    text-decoration: underline;
+    text-transform: lowercase;
+    text-align: center;
+    text-shadow: 5px 5px 8px black;
+}
+.paragraph-2{
+    text-decoration: overline;
+    text-transform: capitalize;
+    text-align: left;
+    text-indent: 20px;
+}
+.paragraph-3{
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-align: right;
+    text-shadow: 10px 10px 12px red;
+}

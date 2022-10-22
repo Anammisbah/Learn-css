@@ -1,0 +1,28 @@
+/* Property font terdiri dari : 
+- font-family untuk mengatur jenis font yang akan dipakai 
+=> font-family: <font utama> <font cadangan> <generic family>
+- font-size untuk mengatur size font
+=> font-size: bisa px, em, rem, dll;
+- font-weight: untuk mengatur ketebalan font
+=> font-weight: 100 - 900, bold, bolder, lighter
+- font-style: untuk mengatur gaya font seperti kemiringan
+=> font-style: italic, oblique, normal
+- font-variant: untuk mencetak teks dengan huruf kapital semua
+=> font-variant: normal, small-caps
+- @font-face{
+    font-family : nama font;
+    src: url(path file) format(format file) => path file font, 
+    url(pathfile) format(format file);
+}
+- shorthand font : <font-style> <font-variant> <font-weight> <font-size> <line-height> <font-family>
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: roboto, sans-serif;
+}
+.paragraph-1{
+    font-size: 18px;
+    font-weight: 700;
+    font-style: oblique;
+    font-variant: small-caps;
+}

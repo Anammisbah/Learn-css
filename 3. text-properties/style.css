@@ -1,4 +1,11 @@
-/* text properties terdiri dari text-align dengan value left, right, center, justify. text-decoration berguna jika akan memberikan garis pada kata dengan value underline, overline, line-through. text-transform berguna untuk mengubah huruf jadi capitalis atau sebaliknya dengan value capitalize, lowercase, uppercase, shorthand text-shadow berguna untuk memberi shadow pada kata : <h-shadow> <v-shadow> <blur-radius> <color> <none|initial|inherita>, text-indent untuk memberikan indentasi, letter-spacing untuk mengatur jarak antar karakter, word-spacing untuk mengatur jarak antar kata*/
+/* text properties terdiri dari 
+- text-align dengan value left, right, center, justify. 
+- text-decoration berguna jika akan memberikan garis pada kata dengan value underline, overline, line-through. 
+- text-transform berguna untuk mengubah huruf jadi capitalis atau sebaliknya dengan value capitalize, lowercase, uppercase, 
+- shorthand text-shadow berguna untuk memberi shadow pada kata : <h-shadow> <v-shadow> <blur-radius> <color> <none|initial|inheritance>, 
+- text-indent untuk memberikan indentasi, 
+- letter-spacing untuk mengatur jarak antar karakter, 
+- word-spacing untuk mengatur jarak antar kata*/
 .paragrafh-1{
     text-align: center;
     text-decoration: underline;

@@ -1,0 +1,17 @@
+/* background-color: digunakan untuk memberi warna pada background */
+/* background-image: berguna untuk memasukan gambar pada background, attributenya url => untuk path file */
+/* background-repeat : berguna untuk membuat gambar background berulang atau tidak, valuenya : repeat, repeat-x, repeat-y, no-repeat */
+/* background-position : dengan valut : top, bottom, left, right, center, digunakan untuk mengatur posisi background */
+/*shorthand background : <background color> <background-image> <background-repeat> <background position>; */
+.background{
+    width: 200px;
+    margin: 0 auto;
+}
+.bg-1{
+    background: lightblue;
+    height: 200px;
+}
+.bg-2{
+    background: url('https://th.bing.com/th/id/OIP.gH6fcjUmQXnkW0e3QoMDpgHaJl?w=139&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7') no-repeat;
+    height: 250px;
+}

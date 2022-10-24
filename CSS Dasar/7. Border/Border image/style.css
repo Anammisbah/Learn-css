@@ -1,0 +1,27 @@
+/* 
+Properti border image : 
+- border-image-source: url(path file); => untuk memasukan gambar border
+- border-image-slice: untuk memotong gambar
+- border-image-width => untuk mengatur lebar
+- border-image-outset => untuk mengatur jarak border image dengan garis terluar kontent
+- border-image-repeat => untuk mengulang gambar border
+*/
+.border{
+    border-style: solid;
+    width: 300px;
+    height: 300px;
+    margin: 30px auto;
+}
+.border-1{
+    border-image-source: url('border1.png');
+    border-image-width: 30px;
+    background-color: blueviolet;
+    border-image-slice: 33 33 33 33;
+    border-image-repeat: round;
+}
+.border-2{
+    background-color: chartreuse;
+    border-image-source: linear-gradient(to left, blue, red);
+    border-image-width: 10px;
+    border-image-slice: 33 33;
+}

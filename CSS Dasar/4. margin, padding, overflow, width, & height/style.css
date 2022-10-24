@@ -1,0 +1,29 @@
+/* margin -> jarak garis terluar ke body
+padding -> jarak garis terluar ke content
+width -> digunakan untuk mengatur lebar
+height -> digunakan untuk mengatur tinggi
+overflow -> digunakan untuk menambahkan scrollbar, valuenya visible, hidden, scroll, dan auto
+*/
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 600px;
+    height: 600px;
+    border: 2px solid rgb(141, 125, 125);
+    margin: 0 auto;
+    padding: 50px;
+    margin: 30px auto;
+}
+.kotak{
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+}
+.container-content{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    overflow: auto;
+    margin: auto;
+}

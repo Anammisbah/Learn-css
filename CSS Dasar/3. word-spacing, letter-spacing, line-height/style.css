@@ -1,0 +1,14 @@
+/* 
+- word-spacing digunakan untuk memberikan jarak pada setiap kata
+- letter-spacing digunakan untuk memberikan jarak pada setiap karakter
+- line-height digunakan untuk mengatur jarak tinggi antar baris 
+ */
+.p1{
+    word-spacing: 10px;
+}
+.p2{
+    letter-spacing: 5px;
+}
+.p3{
+    line-height: 20px;
+}

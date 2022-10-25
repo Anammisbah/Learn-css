@@ -1,0 +1,6 @@
+/* 
+display : inline, inline-block, block, flex, grid
+*/
+p{
+    display: inline;
+}

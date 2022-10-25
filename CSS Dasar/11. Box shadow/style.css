@@ -5,5 +5,6 @@ box-shadow : inset <x-offset> <y-offset> <blur> <spread> <color>
     width: 300px;
     background-color: red;
     height: 300px;
-    box-shadow: 10px 10px 52px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 52px -5px rgba(0,0,0,0.75), -10px -10px 52px -5px rgba(0, 0, 0, .75);
+    margin: 20px;
 }

@@ -1,0 +1,32 @@
+/* 
+Property column
+column-count => digunakan untuk membagi kolom
+column-width => untuk mengatur lebar kolom
+column-fill => menentukan cara mengisi kolom
+column-gap => untuk mengatar jarak antar kolom
+column-rule => untuk membuat garis diantara kolom, column-rule: width style color;
+column-span=> untuk mengeluarkan html dari efek css
+*/
+.content {
+  column-count: 2;
+  text-align: justify;
+}
+.content-2 {
+  column-width: 300px;
+  text-align: justify;
+  column-rule: 1px solid black;
+}
+.column-fill {
+  column-fill: balance;
+  column-width: 300px;
+  text-align: justify;
+  column-gap: 50px;
+}
+.content-3{
+    column-width: 200px;
+    column-rule: 3px double black;
+    column-fill: balance;
+}
+.column-span{
+    column-span: all;
+}

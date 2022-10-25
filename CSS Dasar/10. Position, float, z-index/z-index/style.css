@@ -1,0 +1,27 @@
+/* 
+z-index digunaknn untuk mengatur element ketika saling bertumpukan
+*/
+.kotak{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+.kotak1{
+    background-color: red;
+    position: relative;
+    z-index: 100;
+}
+.kotak2{
+    background-color: yellow;
+    position: relative;
+    bottom: 60px;
+    left: 40px;
+    z-index: 10;
+}
+.kotak3{
+    background-color: green;
+    position: relative;
+    bottom: 120px;
+    left: 80px;
+    z-index: 0;
+}

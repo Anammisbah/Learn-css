@@ -1,0 +1,9 @@
+/* 
+Opacity berfungsi untuk memberikan transparansi, valuenya dari 0 - 1
+*/
+.border{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    opacity: 0.5;
+}

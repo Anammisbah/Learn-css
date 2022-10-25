@@ -1,0 +1,10 @@
+/* 
+float digunakan untuk mengatur tata letak element html
+*/
+img{
+    float: right;
+    margin-left: 10px;
+}
+p{
+    text-align: justify;
+}

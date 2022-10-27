@@ -1,0 +1,62 @@
+/* 
+Ketika akan menggunakan flexbox : 
+1. Ubah display jadi flex => display : flex
+property flexbox
+- flex-wrap: wrap/no-wrap
+- flex-direction => berguna untuk mengatur display valuenya column, row, column-reverse, row-reverse
+- align-items/align-self
+- justify-content/justify-self
+- order => untuk mengurutkan
+*/
+.container{
+    display: flex;
+    height: 300px;
+    border: 1px solid;
+    flex-direction: row;
+    justify-content: unsafe;
+}
+.box{
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+}
+.box-1{
+    background-color: red;
+    order: 5;
+}
+.box-2{
+    background-color: black;
+    order: 2;
+}
+.box-3{
+    background-color: green;
+    order: 4;
+}
+.box-4{
+    background-color: gray;
+    order: 1;
+}
+.box-5{
+    background-color: blue;
+    order: 3;
+}
+.box-6{
+    background-color: lightblue;
+}
+.box-7{
+    background-color: coral;
+}
+.box-8{
+    background-color: salmon;
+}
+.box-9{
+    background-color: violet;
+}
+.box-10{
+    background-color: aqua;
+}
+.box-11{
+    background-color: lightgreen;
+}

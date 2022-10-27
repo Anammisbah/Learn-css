@@ -1,0 +1,16 @@
+/* 
+Pseudoclass yang berhubungan dengan link
+- :link -> style default pada sebuah link
+- :hover -> style ketika mouse berada diatas sebuah link
+- :active -> style ketika sebuah link di klik (keadaan aktif)
+- :visited -> style ketika sebuah link sudah dikunjungi sebelumnya
+Pseudoclass yang berhubungan dengan posisi elemen
+- :first-child -> memilih elemen pertama dari sebuah parent element pembungkusnya
+- :last-child -> memilih element terakhir dari sebuah parent
+- :nth-child(n) -> memilih element ke-n dari sebuah parent
+- :first-of-type -> memilih element pertama dari sebuah jenis/tipe tag
+- :last-of-type -> memilih elemen terakhir dari sebuah jenis
+*/
+ul li:nth-child(3n + 1){
+    list-style: none;
+}

@@ -7,6 +7,9 @@ property flexbox
 - align-items/align-self
 - justify-content/justify-self
 - order => untuk mengurutkan
+
+-  justify-content : untuk mengatur posisi seluruh item pada sumbu horizontal, ini bisa dilakukan ketika ukuran total grid lebih kecil dari ukuran continaernya
+- align-items : untuk mengatur posisi seluruh item pada sumbu vertikal, ini bisa dilakukan ketika ukuran total grid lebih kecil dari ukuran contianernya
 */
 .container{
     display: flex;

@@ -1,0 +1,49 @@
+/* 
+Untuk mendeklarasikan grid => display: grid;
+- grid-template-columns dan grid-template-rows digunakan untuk mendefinisikan kolom / baris
+- grid-auto-flow digunakan untuk mengatur penempatan item/cell
+- grid-template-areas => mendefinisikan grid template menggunakan nama
+- gap untuk membuat jarak diantra item => row-gap, column-gap, gap
+- justify-items : untuk mensejajarkan grid-items pada sumbu horizontal => justify-items: stretch, center, start, end
+- align-items : untuk mensejajarkan grid-items pada sumbu vertikal => align-items: start, end, center, stretch
+- place-items : shorthand untuk menulis justify-items dan align-items dalam satu deklarasi => place-items: <align-items> <justify-content>
+-  justify-content : untuk mengatur posisi seluruh grid container pada sumbu horizontal, ini bisa dilakukan ketika ukuran total grid lebih kecil dari ukuran continaernya
+- align-items : untuk mengatur posisi seluruh grid container pada sumbu vertikal, ini bisa dilakukan ketika ukuran total grid lebih kecil dari ukuran contianernya
+
+keyword dan function pada grid : 
+- repeat() digunakan untuk menentukan ukuran grid track secara berulang => grid-template-columns: repeat(3, 1fr)
+- min-content & max-content digunakan untuk menentukan seberapa besar ukuran grid track berdasarkan content pada sebuah item, min-content akan membuat grid sesuai dengan ukuran terkecil content, sedangkan max-content grid akan sesuai dengan ukuran content jika disejajarkan  => grid-template-columns : 1fr max-content 1fr;
+- minmax() digunakan untuk menentukan minimal dan maksimal dari grid track => grid-template-columns: 1fr minmax(50px, 100px) 1fr;
+- auto-fil & auto-fit digunakan untuk menentukan jumlah item untuk beberapa pada grid track, biasanya digunakan pada repeat => grid-template-columns: repeat(auto-fit, 150px); 
+*/
+.container{
+    display: grid;
+    width: 80%;
+    height: 500px;
+    margin: 50px auto;
+    grid-template-areas : 'header header header' 'sidebar content content' 'sidebar content content' 'footer footer footer';
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3 1fr);
+}
+.item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    grid-area: header;
+    background-color: salmon;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: lightblue;
+}
+.content{
+    grid-area: content;
+    background-color: lightgreen;
+}
+.footer{
+    grid-area: footer;
+    background-color: lightslategray;
+}

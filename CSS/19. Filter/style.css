@@ -1,0 +1,28 @@
+/* 
+filter digunakan untuk memberikan efek visual pada gambar, background, atau border.
+tipe fileter : blur, brightness, contrast, saturate, grayscale, sepia, hue-rotate, invert, opacity, drop-shadow
+*/
+/* root */
+:root{
+    --z-index-fixed: 100;
+}
+/* base */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("index.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.black {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: var(--z-index-fixed);
+}

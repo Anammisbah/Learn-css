@@ -1,5 +1,6 @@
 /* 
 - Dengan transform memungkinkan kita dapat memanipulasi format visual dari elemen html
+- transform-origin => digunakan untuk mengatur titik x dan y, contoh => transform-origin: 0 0;
 - transform: <fungsi>
 - fungsi transformasi : scale(memperbesar/memperkecil>, rotate (memutar> skew(membuat condong / miring>, translate(mengubah posisi)
 - scale(angka), scaleX(angka), scaleY(angka)

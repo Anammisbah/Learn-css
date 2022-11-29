@@ -1,0 +1,12 @@
+/* Selector CSS
+1. Element + Element => digunakan untuk menyeleksi element pertama setelah selector pertama,contoh : 
+div + p => Maka akan menyeleksi element p pertama setelah tag div
+2. Element ~ Element => digunakan untuk menyeleksi semua element selector kedua yang menjadi sibling dari selector pertama, dengan catatan element tersebut berada setelah element selector pertama dan memiliki parent yang sama
+3. [target] => digunakan untuk menyeleksi semua element yang memiliki attribute target
+4. [target=_blank] => digunakan untuk menyeleksi semua element yang memiliki attribute target yang hanya memiliki value _blank
+5. [target~=_blank] => digunakan untuk menyeleksi semua element yang memiliki attribute target yang memiliki value _blank
+6. [lang|=en] => digunakan untuk menyeleksi semua element yang memiliki attribute lang dengan value 'en' atau yang berawalan 'en-'
+7. a[href^="https"] => digunakan untuk menyeleksi semua element anchor yang memiliki attribute href dengan value yang dimulai dengan "https"
+8. a[href$=".pdf"] => digunakan untuk menyeleksi semua element anchor yang memilki attribute href dengan value yang berakhiran dengan ".pdf"
+9. a[href*="w3schools"] => digunakan untuk menyeleksi semua element anchor yang memiliki attribute href dengan value yang memiliki substring "w3schools"
+*/

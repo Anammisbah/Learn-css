@@ -4,46 +4,60 @@ Untuk mendeklarasikan grid => display: grid;
 - grid-auto-flow digunakan untuk mengatur penempatan item/cell
 - grid-template-areas => mendefinisikan grid template menggunakan nama
 - gap untuk membuat jarak diantra item => row-gap, column-gap, gap
+
+Grid Alignment
 - justify-items : untuk mensejajarkan grid-items pada sumbu horizontal => justify-items: stretch, center, start, end
-- align-items : untuk mensejajarkan grid-items pada sumbu vertikal => align-items: start, end, center, stretch
-- place-items : shorthand untuk menulis justify-items dan align-items dalam satu deklarasi => place-items: <align-items> <justify-content>
--  justify-content : untuk mengatur posisi seluruh grid container pada sumbu horizontal, ini bisa dilakukan ketika ukuran total grid lebih kecil dari ukuran continaernya
-- align-items : untuk mengatur posisi seluruh grid container pada sumbu vertikal, ini bisa dilakukan ketika ukuran total grid lebih kecil dari ukuran contianernya
+- align-items : untuk mensejajarkan grid-items pada sumbu vertikal, ini bisa dilakukan ketika ukuran total grid lebih kecil dari ukuran containernya => flex-start, flex-end, center
+- place-items : shorthand untuk menulis justify-items dan align-items dalam satu deklarasi => place-items: <align-items> <justify-items>
+-  justify-content : untuk mengatur posisi seluruh grid container pada sumbu horizontal, ini bisa dilakukan ketika ukuran total grid lebih kecil dari ukuran containernya dan menggunakan ukuran yang fixed
+- align-content : sama seperti justify content, hanya saja align content mengatur posisi pada sumbu vertikal
+- place-content : shorthand untuk menulis justify-content dan align-content dalam satu deklarasi, place-content: <align-content> <justify-content>
+- justify-self : untuk mengatur posisi item yang dipilih pada sumbu horizontal 
+- align-self : untuk mengatur posisi item yang dipilih pada sumbu vertikal
 
 keyword dan function pada grid : 
 - repeat() digunakan untuk menentukan ukuran grid track secara berulang => grid-template-columns: repeat(3, 1fr)
 - min-content & max-content digunakan untuk menentukan seberapa besar ukuran grid track berdasarkan content pada sebuah item, min-content akan membuat grid sesuai dengan ukuran terkecil content, sedangkan max-content grid akan sesuai dengan ukuran content jika disejajarkan  => grid-template-columns : 1fr max-content 1fr;
 - minmax() digunakan untuk menentukan minimal dan maksimal dari grid track => grid-template-columns: 1fr minmax(50px, 100px) 1fr;
 - auto-fil & auto-fit digunakan untuk menentukan jumlah item untuk beberapa pada grid track, biasanya digunakan pada repeat => grid-template-columns: repeat(auto-fit, 150px); 
+
+grid item properties : 
+- grid-column-start, grid-column-end, grid-row-start, dan grid-row-end digunakan untuk menentukan tempat dari grid item dengan mengacu pada nomor atau nama grid line yang spesifik, contoh :
+grid-column-start: <nomor> | <nama> | span <nomor> | span <nama> | auto
 */
-.container{
-    display: grid;
-    width: 80%;
-    height: 500px;
-    margin: 50px auto;
-    grid-template-areas : 'header header header' 'sidebar content content' 'sidebar content content' 'footer footer footer';
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3 1fr);
+.container {
+  display: grid;
+  width: 80%;
+  height: 500px;
+  margin: 50px auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  border: 1px solid black;
 }
-.item{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.item {
+  display: grid;
+  place-items: center;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  text-transform: capitalize;
 }
-.header{
-    grid-area: header;
-    background-color: salmon;
+.header {
+  grid-column: 1 / span 3;
+  grid-row: 1 / 2;
+  background-color: salmon;
 }
-.sidebar{
-    grid-area: sidebar;
-    background-color: lightblue;
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 2 / span 2;
+  background-color: lightblue;
 }
-.content{
-    grid-area: content;
-    background-color: lightgreen;
+.content {
+  grid-column: 2 / 4;
+  grid-row: 2 / span 2;
+  background-color: lightgreen;
 }
-.footer{
-    grid-area: footer;
-    background-color: lightslategray;
+.footer {
+  grid-column: 1 / span 3;
+  grid-row: 4 / 5;
+  background-color: lightslategray;
 }

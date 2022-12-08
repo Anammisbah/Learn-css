@@ -6,27 +6,28 @@ Property background
 - background-position: setting posisi background, shorthand => background-position : <position x> <position y>;
 - background-repeat : untuk mengulang gambar valuenya: repeat, repeat-x, repeat-y
 - background-attachment: valuenya scroll, fixed, local
-- background-blend-mode => digunakan untuk memberikan efek pada background-image valunya : normal, multiply, overlay, screen, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exlusion, hue, saturation, color, luminosity
+- background-blend-mode => digunakan untuk memberikan efek pada background-image valuenya : normal, multiply, overlay, screen, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exlusion, hue, saturation, color, luminosity
 - shorthand background: <color> <url> <repeat> <position>;
+- background-clip : valuenya => border-box|padding-box|content-box|initial|inherit|text
 */
-.background{
-    width: 300px;
-    height: 300px;
-    margin: 30px auto;
-    border: 1px solid black;
+.background {
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+  border: 1px solid black;
 }
-.background-1{
-    background: red;
+.background-1 {
+  background: red;
 }
-.background-2{
-    background-image: url('https://www.bing.com/th?id=OIP.KYxIeqmYNdEh-EXp-XG4JAHaHq&w=245&h=254&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2');
-    background-size: cover;
+.background-2 {
+  background-image: url("https://www.bing.com/th?id=OIP.KYxIeqmYNdEh-EXp-XG4JAHaHq&w=245&h=254&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2");
+  background-size: cover;
 }
-.background-3{
-    background-image: url('https://www.bing.com/th?id=OIP.KYxIeqmYNdEh-EXp-XG4JAHaHq&w=245&h=254&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2');
-    background-size: contain;
+.background-3 {
+  background-image: url("https://www.bing.com/th?id=OIP.KYxIeqmYNdEh-EXp-XG4JAHaHq&w=245&h=254&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2");
+  background-size: contain;
 }
-.background-4{
-    background-image: url('https://www.bing.com/th?id=OIP.KYxIeqmYNdEh-EXp-XG4JAHaHq&w=245&h=254&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2');
-    background-size: auto;
+.background-4 {
+  background-image: url("https://www.bing.com/th?id=OIP.KYxIeqmYNdEh-EXp-XG4JAHaHq&w=245&h=254&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2");
+  background-size: auto;
 }
